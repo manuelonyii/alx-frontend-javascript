@@ -1,3 +1,7 @@
 export default function getResponseFromAPI() {
-  return new Promise((resolve, reject) => [resolve, reject]);
+  const success = true;
+  return new Promise((resolve, reject) => {
+    const result = success ? resolve() : reject();
+    return result;
+  });
 }
